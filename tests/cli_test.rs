@@ -1,8 +1,8 @@
-extern crate ttalk;
+use ttalk::Cli;
 use clap::Parser;
 
 #[test]
 fn test(){
-    let arg = ttalk::Cli::parse();
+    let arg = Cli::parse();
     println!("{:?}",arg)
 }
